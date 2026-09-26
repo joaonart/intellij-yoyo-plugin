@@ -1,13 +1,11 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <title>YoYo</title>
-  <!-- Left Half Disc -->
-  <path d="M2.5 4C2.5 2.6 3.4 1.5 4.8 1.5C5.8 1.5 6.6 2.4 6.6 4.2V11.8C6.6 13.6 5.8 14.5 4.8 14.5C3.4 14.5 2.5 13.4 2.5 12V4Z" fill="#EDECEC"/>
-  <path d="M4.2 3.8C4 4.5 3.9 5.8 3.9 8C3.9 10.2 4 11.5 4.2 12.2" stroke="#1E1F22" stroke-width="0.8" stroke-linecap="round" stroke-opacity="0.3"/>
-  <!-- Right Half Disc -->
-  <path d="M13.5 4C13.5 2.6 12.6 1.5 11.2 1.5C10.2 1.5 9.4 2.4 9.4 4.2V11.8C9.4 13.6 10.2 14.5 11.2 14.5C12.6 14.5 13.5 13.4 13.5 12V4Z" fill="#EDECEC"/>
-  <path d="M11.8 3.8C12 4.5 12.1 5.8 12.1 8C12.1 10.2 12 11.5 11.8 12.2" stroke="#1E1F22" stroke-width="0.8" stroke-linecap="round" stroke-opacity="0.3"/>
-  <!-- Axle -->
-  <rect x="6.6" y="7" width="2.8" height="2" rx="0.5" fill="#EDECEC"/>
-  <!-- Winding String -->
-  <path d="M8 7V4C8 2.6 9.1 1.5 10.5 1.5C11.9 1.5 12.8 2.4 12.8 3.5C12.8 4.6 11.8 5.2 11 5.2" stroke="#EDECEC" stroke-width="1.2" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="-1 0 201 176.06">
+    <title>YoYo</title>
+    <g>
+        <!-- Círculo esquerdo -->
+        <circle cx="71.215" cy="98.03" r="72" fill="#52525b75"/>
+        <!-- Círculo central (fixo no centro do viewBox) -->
+        <circle cx="99.215" cy="88.03" r="72" fill="#71717ad0"/>
+        <!-- Círculo direito -->
+        <circle cx="127.215" cy="78.03" r="72" fill="#a1a1aaf0"/>
+    </g>
 </svg>

@@ -1,0 +1,27 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='-1 0 201 176.06'>
+    <g>
+    <!-- Círculo esquerdo -->
+    <circle
+            cx='71.215'
+            cy='98.03'
+            r='72'
+            fill='#1e40af75'
+    />
+
+    <!-- Círculo central (fixo no centro do viewBox) -->
+    <circle
+            cx='99.215'
+            cy='88.03'
+            r='72'
+            fill='#2563ebd0'
+    />
+
+    <!-- Círculo direito -->
+    <circle
+            cx='127.215'
+            cy='78.03'
+            r='72'
+            fill='#3b82f6f0'
+    />
+    </g>
+</svg>
