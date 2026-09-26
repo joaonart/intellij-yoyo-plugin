@@ -1,0 +1,66 @@
+<idea-plugin>
+    <id>com.jnart.yoyo.intellij-yoyo-plugin</id>
+    <name>YoYo Terminal Launcher</name>
+    <version>1.0.0</version>
+    <vendor email="joao.alves64@gmail.com" url="https://github.com/joaonart/intellij-yoyo-plugin">João Alves (j-nart)</vendor>
+
+    <description><![CDATA[
+      <h3>YoYo Terminal Launcher</h3>
+      <p>A fast, seamless IntelliJ IDEA extension that adds a header toolbar button and a dedicated keyboard shortcut to open the integrated terminal and run the <code>yoyo</code> CLI command (YoYo Platform) directly in your active project workspace.</p>
+
+      <h4>✨ Key Features</h4>
+      <ul>
+        <li><b>Dynamic Plugin:</b> Instant activation upon installation without requiring an IDE restart.</li>
+        <li><b>Header Toolbar Action:</b> Accessible directly from the top-right header toolbar (<code>MainToolbarRight</code> in Modern UI).</li>
+        <li><b>Keyboard Shortcut:</b> Quick trigger using <code>Cmd+Option+Y</code> (macOS) or <code>Ctrl+Alt+Y</code> (Windows/Linux).</li>
+        <li><b>Integrated Terminal:</b> Opens a dedicated terminal tab titled <b>YoYo Platform</b> pointing to the current project root path.</li>
+        <li><b>Theme Aware:</b> Features custom YoYo branding with automatic light and dark IDE theme switching.</li>
+      </ul>
+
+      <h4>🌐 Source Code & Repository</h4>
+      <p>Developed by <b>João Alves (j-nart)</b>.<br/>
+      GitHub Repository: <a href="https://github.com/joaonart/intellij-yoyo-plugin">https://github.com/joaonart/intellij-yoyo-plugin</a></p>
+
+      <h4>⌨️ Default Keyboard Shortcut</h4>
+      <ul>
+        <li><b>macOS:</b> <code>Cmd + Option + Y</code></li>
+        <li><b>Windows / Linux:</b> <code>Ctrl + Alt + Y</code></li>
+      </ul>
+
+      <hr/>
+      <p><b>⚠️ Community Plugin Disclaimer:</b> This is an independent, community-developed plugin created by <b>João Alves (j-nart)</b> and is not affiliated with, endorsed by, or officially associated with YoYo Platform.</p>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      <h3>Version 1.0.0</h3>
+      <ul>
+        <li>Initial release of YoYo Terminal Launcher.</li>
+        <li>Dynamic Plugin loading support (no IDE restart required).</li>
+        <li>Added header toolbar action in the top-right corner.</li>
+        <li>Added default keyboard shortcut (<code>Cmd+Option+Y</code> / <code>Ctrl+Alt+Y</code>).</li>
+        <li>Integrated terminal launcher executing <code>yoyo</code> targeting active project root directory.</li>
+        <li>Included custom branding with light/dark theme icon support.</li>
+      </ul>
+    ]]></change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.plugins.terminal</depends>
+
+    <actions>
+        <action id="YoYo.RunTerminalAction"
+                class="com.jnart.yoyo.YoYoAction"
+                text="YoYo Terminal"
+                description="Open YoYo Platform in IntelliJ Terminal"
+                icon="/icons/yoyoIcon.svg">
+            <!-- Dedicated Keyboard Shortcut (Ctrl+Alt+Y / Cmd+Option+Y) -->
+            <keyboard-shortcut keymap="$default" first-keystroke="control alt Y"/>
+
+            <!-- Modern UI Toolbar Groups -->
+            <add-to-group group-id="MainToolbarRight" anchor="last"/>
+            <add-to-group group-id="NavBarToolWindowGroup" anchor="last"/>
+            <add-to-group group-id="MainToolbar" anchor="last"/>
+            <!-- Tools Menu fallback -->
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>

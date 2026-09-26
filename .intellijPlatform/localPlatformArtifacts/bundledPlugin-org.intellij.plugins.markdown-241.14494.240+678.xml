@@ -1,0 +1,15 @@
+<ivy-module version="2.0">
+  <info organisation="bundledPlugin" module="org.intellij.plugins.markdown" revision="241.14494.240+678"/>
+  <configurations>
+    <conf name="default" visibility="public"/>
+  </configurations>
+  <publications>
+    <artifact name="/Users/joaoalves/.gradle/caches/transforms-4/0bbce0b373d5a989cd233cc8e75fce9a/transformed/ideaIU-2024.1-aarch64/plugins/markdown" type="directory" conf="default"/>
+  </publications>
+  <dependencies>
+    <dependency org="bundledPlugin" name="org.intellij.intelliLang" rev="241.14494.240+786"/>
+    <dependency org="bundledPlugin" name="org.jetbrains.plugins.yaml" rev="241.14494.240+370"/>
+    <dependency org="bundledPlugin" name="org.toml.lang" rev="241.14494.240+871"/>
+    <dependency org="bundledPlugin" name="com.intellij.platform.images" rev="241.14494.240+453"/>
+  </dependencies>
+</ivy-module>
