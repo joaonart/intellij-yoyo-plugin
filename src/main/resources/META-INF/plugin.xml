@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.jnart.yoyo.intellij-yoyo-plugin</id>
     <name>YoYo Terminal Launcher</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <vendor email="joao.alves64@gmail.com" url="https://github.com/joaonart/intellij-yoyo-plugin">João Alves (j-nart)</vendor>
 
     <description><![CDATA[
@@ -32,6 +32,11 @@
     ]]></description>
 
     <change-notes><![CDATA[
+      <h3>Version 1.0.1</h3>
+      <ul>
+        <li>Fixed PluginException at IDE startup by removing unregistered toolbar groups (<code>MainToolbar</code> and <code>NavBarToolWindowGroup</code>).</li>
+        <li>Optimized action presentation updates to execute on background thread (<code>ActionUpdateThread.BGT</code>).</li>
+      </ul>
       <h3>Version 1.0.0</h3>
       <ul>
         <li>Initial release of YoYo Terminal Launcher.</li>
@@ -55,10 +60,9 @@
             <!-- Dedicated Keyboard Shortcut (Ctrl+Alt+Y / Cmd+Option+Y) -->
             <keyboard-shortcut keymap="$default" first-keystroke="control alt Y"/>
 
-            <!-- Modern UI Toolbar Groups -->
+            <!-- Modern UI Header Toolbar (Top-Right) -->
             <add-to-group group-id="MainToolbarRight" anchor="last"/>
-            <add-to-group group-id="NavBarToolWindowGroup" anchor="last"/>
-            <add-to-group group-id="MainToolbar" anchor="last"/>
+
             <!-- Tools Menu fallback -->
             <add-to-group group-id="ToolsMenu" anchor="last"/>
         </action>

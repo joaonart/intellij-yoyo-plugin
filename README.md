@@ -67,14 +67,14 @@ In your terminal, navigate to the project directory and run:
 ```
 
 The compiled plugin ZIP package will be generated at:
-`build/distributions/intellij-yoyo-plugin-1.0.0.zip`
+`build/distributions/intellij-yoyo-plugin-1.0.1.zip`
 
 ### 3. Install in IntelliJ IDEA
 1. Open IntelliJ IDEA.
 2. Go to **Settings** (or **Preferences** on macOS) -> **Plugins**.
 3. Click the gear icon ⚙️ in the top-right corner of the Plugins window.
 4. Select **Install Plugin from Disk...**.
-5. Choose the generated `.zip` file (`intellij-yoyo-plugin-1.0.0.zip`).
+5. Choose the generated `.zip` file (`intellij-yoyo-plugin-1.0.1.zip`).
 6. The plugin will be enabled **instantly** (no IDE restart required)!
 
 ---
